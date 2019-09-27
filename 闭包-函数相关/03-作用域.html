@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      // 局部作用域
+      (function() {
+        var a = 10;
+        //a的局部作用域
+        function fun() {
+          console.log(a);
+          //函数被调用 var a 在本函数内提升
+          var a = 20;
+        }
+        fun();
+        console.log(a);
+      })();
+
+      //全局作用域
+      (function() {
+        var a = 10;
+        //a的全局作用域
+        function fun() {
+          console.log(a);
+          //函数被调用 var a 在本函数内提升
+          a = 20;
+        }
+        fun();
+        console.log(a);
+      })();
+
+      //形参a的局部作用域
+      (function() {
+        var a = 10;
+        //a的全局作用域
+        function fun(a) {
+          console.log(a);
+          //函数被调用 var a 在本函数内提升
+          a = 20;
+        }
+        fun(a);
+        console.log(a);
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //定义一个函数getNum(),每调用一次，返回一个递增不重复的整数，且不受外部干扰
+      function getNum() {
+        let num = 0;
+        return function() {
+          num += 1;
+          return num;
+        };
+      }
+      let num = getNum();
+      console.log(num());
+      console.log(num());
+      console.log(num());
+      console.log(num());
+    </script>
+  </head>
+  <body></body>
+</html>

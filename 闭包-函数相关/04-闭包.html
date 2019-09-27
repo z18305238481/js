@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //闭包形成，内层函数的作用域链引用着外层函数的作用域对象，导致外层函数的作用域无法释放，形成闭包
+      function parent() {
+        let totle = 1000;
+        return function(money) {
+          totle -= money;
+          console.log(`还剩${totle}元`);
+        };
+      }
+      let pay = parent();
+      pay(100);
+      pay(100);
+      pay(100);
+      pay(100);
+
+      //释放闭包
+      pay = null;
+    </script>
+  </head>
+  <body></body>
+</html>

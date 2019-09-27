@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea5cc561-e93f-4c2c-8f3e-214935fcab50" name="默认更改列表" comment="" />
+    <list default="true" id="ea5cc561-e93f-4c2c-8f3e-214935fcab50" name="默认更改列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +15,7 @@
   </component>
   <component name="ProjectId" id="1ROokWrS7YEHMh8MLC3MOlb4j30" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/git/web" />
   </component>
@@ -39,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569547646835</updated>
       <workItem from="1569547648124" duration="9000" />
+      <workItem from="1569579470366" duration="599000" />
     </task>
     <servers />
   </component>
@@ -50,7 +54,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
