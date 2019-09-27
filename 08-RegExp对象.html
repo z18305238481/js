@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script>
+      let arr = ["明月", "青天"];
+      let re = new RegExp(arr.join("|"), "ig");
+      let msg = prompt("请输入消息内容");
+      msg = msg.search(re);
+      if (msg !== -1) {
+        alert("存在敏感词");
+      } else {
+        alert("不存在敏感词");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

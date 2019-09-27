@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script>
+      // 删除开头空字符
+      function ltrim(str) {
+        return str.replace(/^\s+/, "");
+      }
+
+      function rtrim(str) {
+        return str.replace(/\s+$/, "");
+      }
+
+      function trim(str) {
+        return str.replace(/^\s+|\s+$/g, "");
+      }
+
+      console.log(ltrim("   are  you  ok   "));
+      console.log(rtrim("   are  you  ok   "));
+      console.log(trim("   are  you  ok   "));
+    </script>
+  </head>
+  <body></body>
+</html>

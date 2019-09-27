@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<script>
+			let msg = prompt('请输入消息内容');
+			let arr = msg.match(/([卧我](\s+)?([槽草艹]|cao)|([槽草艹]|cao))/i);
+			console.log(arr);
+			if (arr) {
+				document.write(
+					`<h1 style="color:red">包含敏感词 在${arr.index}位置，${arr[0]}</h1>`,
+				);
+			} else {
+				document.write('<h1 style="color:red">不包含敏感词</h1>');
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

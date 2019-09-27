@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>Document</title>
+    <script>
+      let str = "are you ok";
+      console.log(str);
+      str = str.replace(/\b[a-z]/gi, function(keyword) {
+        return keyword.toUpperCase();
+      });
+      console.log(str);
+    </script>
+  </head>
+  <body></body>
+</html>
