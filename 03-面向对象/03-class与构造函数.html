@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //class
+      class test {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+        }
+        add() {
+          return this.x + this.y;
+        }
+      }
+      let t = new test(1, 2);
+      console.log(t.add());
+
+      //构造函数
+      function test2(x, y) {
+        this.x = x;
+        this.y = y;
+        this.add = function() {
+          return this.x + this.y;
+        };
+      }
+      let t2 = new test2(2, 3);
+      console.log(t2.add());
+    </script>
+  </head>
+  <body></body>
+</html>

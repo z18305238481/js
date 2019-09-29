@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      function Student(sname, sage) {
+        this.sname = sname;
+        this.sage = sage;
+        this.intr = function() {
+          console.log(`I'm ${this.sname}, I'm ${this.sage}`);
+        };
+      }
+
+      let lilei = new Student("lilei", 25);
+      let hmm = new Student("hmm", 26);
+      console.log(lilei);
+      console.log(hmm);
+      lilei.intr();
+      hmm.intr();
+    </script>
+  </head>
+  <body></body>
+</html>

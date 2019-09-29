@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //构造函数
+      function Student(sname, sage) {
+        this.sname = sname;
+        this.sage = sage;
+      } //=>prototype 空原型
+
+      //原型中添加方法=>继承  所有对象的公用intr方法
+      Student.prototype.intr = function() {
+        console.log(`I'm ${this.sname}, I'm ${this.sage}`);
+      };
+      //构造函数正常调用
+      let lilei = new Student("lilei", 25);
+      let hmm = new Student("hmm", 26);
+      console.log(lilei);
+      console.log(hmm);
+      lilei.intr();
+      hmm.intr();
+    </script>
+  </head>
+  <body></body>
+</html>

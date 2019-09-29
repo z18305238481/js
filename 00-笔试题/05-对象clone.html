@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let lilei = {
+        sname: "lilei",
+        sage: 25
+      };
+
+      function clone(obj) {
+        let fun = {};
+        for (const key in obj) {
+          fun[key] = obj[key];
+        }
+        return fun;
+      }
+
+      let lilei2 = clone(lilei);
+      console.log(lilei);
+      console.log(lilei2);
+      console.log(lilei == lilei2);
+    </script>
+  </head>
+  <body></body>
+</html>
