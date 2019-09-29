@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //统计每个字符出现的次数，比找出出现次数最大的字符
+      let str = "hello word";
+      //
+      let arr = [];
+      for (let i = 0; i < str.length; i++) {
+        //获得当前字母
+        let char = str[i];
+        //如果arr中没有这个字母，就添加当前字母，值为1，如果存在值加1
+        if (arr[char]) {
+          arr[char] += 1;
+        } else {
+          arr[char] = 1;
+        }
+      }
+      console.log(arr);
+
+      let maxChar = "";
+      let count = 0;
+      //遍历关联数组   关联数组类似对象  python中的字典
+      for (const key in arr) {
+        if (arr[key] > count) {
+          //如果当前key的值大于count 将maxChar和count更换为当前值
+          maxChar = key;
+          count = arr[key];
+        }
+      }
+      console.log(maxChar, count);
+    </script>
+  </head>
+  <body></body>
+</html>
