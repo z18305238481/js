@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //循环斐波那契
+      function f(n) {
+        if (n < 3) {
+          return 1;
+        } else {
+          let f1 = 1,
+            f2 = 1,
+            fn = 2;
+          for (let i = 3; i <= n; i++) {
+            fn = f1 + f2;
+            f1 = f2;
+            f2 = fn;
+          }
+          return fn;
+        }
+      }
+      console.log(f(10));
+      //递归斐波那契
+      function fd(n) {
+        if (n < 3) {
+          return 1;
+        } else {
+          return fd(n - 1) + fd(n - 2);
+        }
+      }
+
+      console.log(fd(10));
+    </script>
+  </head>
+  <body></body>
+</html>

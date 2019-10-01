@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      "user strict";
+      //访问器属性-增加自定义保护规则
+      let eric = {
+        eid: 1001,
+        ename: "埃里克",
+        eage: 26
+      };
+
+      //员工年龄必须18~65
+      Object.defineProperties(eric, {
+        //先将eage改为_eage,半影藏
+        _eage: {
+          value: eric.eage,
+          writable: true,
+          enumerable: false,
+          configurable: false
+        },
+        //再定义访问器属性顶替eage
+        eage: {
+          get: function() {
+            return this._eage;
+          },
+          set: function(value) {
+            if (value >= 18 && value <= 65) {
+              this._eage = value;
+            } else {
+              throw Error("年龄范围错误");
+            }
+          },
+          enumerable: true,
+          configurable: false
+        }
+      });
+      console.log(eric.eage);
+      eric.eage = 99;
+      console.log(eric.eage);
+      console.log(eric);
+    </script>
+  </head>
+  <body></body>
+</html>

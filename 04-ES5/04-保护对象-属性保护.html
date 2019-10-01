@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      "use strict";
+      //阻止对对象的属性值以及对象的结构进行不合法的修改
+
+      //保护对象的属性
+      //    命名属性-数据属性：实际存储属性值的属性
+      //    命名属性-访问器属性：保护数据属性
+      let eric = {
+        eid: 1001,
+        ename: "埃里克",
+        salary: 12000
+      };
+      //获取属性的描述信息
+      console.log(Object.getOwnPropertyDescriptor(eric, "eid"));
+      // //只读eid
+      // Object.defineProperty(eric, "eid", {
+      //   writable: false, //false设置为只读
+      //   configurable: false //禁止删除该属性，禁止修改其他控制开关
+      // });
+      // //禁止删除ename
+      // Object.defineProperty(eric, "ename", {
+      //   configurable: false //禁止删除，禁止修改其他控制开关
+      // });
+      // //禁止for in随便遍历salary
+      // Object.defineProperty(eric, "salary", {
+      //   enumerable: false, //false 禁止for in遍历 半影藏
+      //   configurable: false //禁止删除该属性，禁止修改其他控制开关
+      // });
+
+      //只读eid,禁止删除ename,禁止for in随便遍历salary-------------简写
+      Object.defineProperties(eric, {
+        eid: { writable: false, configurable: false },
+        ename: { configurable: false },
+        salary: { enumerable: false, configurable: false }
+      });
+      console.log(eric);
+    </script>
+  </head>
+  <body></body>
+</html>

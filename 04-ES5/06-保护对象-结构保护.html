@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      "use strict";
+      //保护对象的结构
+      let eric = {
+        eid: 1001,
+        ename: "埃里克"
+      };
+      //不可扩展-不可添加新属性
+      Object.preventExtensions(eric);
+      //密封：兼具防扩展和防删除所有属性
+      Object.seal(eric);
+      //冻结: 兼具密封和禁止修改属性的值
+      Object.freeze(eric);
+
+      console.log(eric);
+    </script>
+  </head>
+  <body></body>
+</html>

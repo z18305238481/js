@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let a = [1, 2, 3];
+      //constructor 属性返回对创建此对象的数组函数的引用，就是返回对象相对应的构造函数
+      console.log(a.__proto__.constructor); //ƒ Array()
+
+      console.log(a.toString()); //1,2,3
+      //instanceof 用于判断一个变量是否某个对象的实例
+      console.log(a instanceof Array ? true : false); //true
+      //ES6方法Array.isArray
+      console.log(Array.isArray(a)); //true
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- <script>
+      function Student(sname, sage) {
+        this.sname = sname;
+        this.sage = sage;
+      } //=>prototype 空原型
+
+      //构造函数正常调用
+      let lilei = new Student("lilei", 25);
+      let hmm = new Student("hmm", 26);
+
+      function father() {
+        console.log(`${this.sname},${this.sage}`);
+      }
+      //修改继承的原型对象-单个
+      Object.setPrototypeOf(lilei, father);
+      console.log(lilei);
+      console.log(hmm);
+    </script> -->
+
+    <script>
+      function Student(sname, sage) {
+        this.sname = sname;
+        this.sage = sage;
+      } //=>prototype 空原型
+
+      function newfather() {
+        console.log(`new ${this.sname},${this.sage}`);
+      }
+      //修改继承的原型对象-多个-修改构造函数的prototype指向新的原型对象，在创建子对象之前
+      Student.prototype = newfather;
+      let lilei = new Student("lilei", 25);
+      let hmm = new Student("hmm", 26);
+      console.log(lilei);
+      console.log(hmm);
+    </script>
+  </head>
+  <body></body>
+</html>

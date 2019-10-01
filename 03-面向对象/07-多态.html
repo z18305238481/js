@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //一个函数在不同的情况下表现出的不同状态
+      //a 重载(arguments)
+      //b 重写(override):在子对象内部定义和父对象成员同名的自由成员
+      let lilei = {
+        sname: "LiLei",
+        sage: 11,
+        toString: function() {} //重写 lilei 中的 toString
+      }; //__proto__ =>Object.prototype
+
+      function Student() {
+        this.sname = sname;
+        this.sage = sage;
+      } //__proto__ =>Object.prototype
+      Student.prototype.toString = function() {}; //重写 Student 中的 toString
+
+      let hmm = new Student("Han Meimei", 12);
+    </script>
+  </head>
+  <body></body>
+</html>

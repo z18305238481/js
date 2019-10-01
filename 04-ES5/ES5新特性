@@ -1,0 +1,3 @@
+1.禁止给未定义的变量赋值 user strict
+2.静默失败升级为错误
+3.禁用arguments.callee 等于禁用递归算法
