@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //reduce 统计字符次数
+      let str = "helloword";
+      let arr = str.split("").reduce(function(prev, value, index, arr) {
+        if (prev[value]) {
+          prev[value]++;
+        } else {
+          prev[value] = 1;
+        }
+        return prev;
+      }, []);
+
+      console.log(arr);
+
+      let maxchar = "";
+      let count = 0;
+      for (const key in arr) {
+        if (arr[key] > count) {
+          maxchar = key;
+          count = arr[key];
+        }
+      }
+      console.log(maxword, count);
+    </script>
+  </head>
+  <body></body>
+</html>

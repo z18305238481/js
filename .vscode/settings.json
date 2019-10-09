@@ -1,4 +1,5 @@
 {
+  //背景图配置
   "background.enabled": true,
   // "background.useDefault": false,
   // // "background.customImages": ["file:///D:/"],
@@ -14,4 +15,22 @@
   //   "background-size": "100%,100%",
   //   "opacity": 0.1
   // }
+
+  //vscode es6语法检测配置
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    }
+  ],
+  "eslint.autoFixOnSave": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2
 }

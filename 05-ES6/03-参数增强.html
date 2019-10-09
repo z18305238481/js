@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let arr = [1, 2, 3, 4, 5, 4, 3, 2, 1];
+      function indexOf(arr, kw, formi=0) {
+        //从formi位置开始查找
+        for (let i = formi; i < arr.length; i++) {
+          // 如果当前元素值和传入的kw值一致返回当前位置
+          if (kw == arr[i]) {
+            return i;
+          }
+        }
+        //如果未找到相同的元素返回-1
+        return -1;
+      }
+      console.log(indexOf(arr,3));
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //只要一个函数中的this不是想要的，替换为想要的对象
+      //call/apply/bind
+      //在一次调用时临时替换this为指定对象 call
+      let a = {
+        name: "onepixel", //定义a的属性
+        say: function() {
+          //定义a的方法
+          console.log("Hi,I'm function a!");
+        }
+      };
+
+      function b(name) {
+        console.log("Post params: " + name);
+        console.log("I'm " + this.name);
+        this.say();
+      }
+
+      b.call(a, "test");
+      // >>
+      // Post params: test
+      // I'm onepixel
+      // I'm function a!
+      //当执行b.call 时，字符串`test`作为参数传递给了函数b,由于call的作用，
+      //函数b中的this指向了对象a, 因此相当于调用了对象a上的函数b,而实际上a中没有定义b 。
+
+      //apply
+      //apply 和 call 的唯一区别是第二个参数的传递方式不同，apply 的第二个参数必须是一个数组（或者类数组），而 call 允许传递一个参数列表。
+      //值得你注意的是，虽然 apply 接收的是一个参数数组，但在传递给调用函数时，却是以参数列表的形式传递
+      function b(x, y, z) {
+        console.log(x, y, z);
+      }
+      b.apply(a, [1, 2, 3]); // 1 2 3
+
+      //bind不会自动执行，创建一个函数副本，永久替换this为指定对象
+      function b(name) {
+        console.log("Post params: " + name);
+        console.log("I'm " + this.name);
+        this.say();
+      }
+      let c = b.bind(a);
+      c("test");
+    </script>
+  </head>
+  <body></body>
+</html>

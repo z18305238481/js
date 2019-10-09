@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      "use strict";
+      let arr1 = [2, 4, 6, 8, 10, 11];
+      // 参数	           描述
+      // value      	  必须。当前元素的值
+      // index	        可选。当前元素的索引值
+      // arr	          可选。当前元素属于的数组对象
+
+      //value按值传递-传递的参数是按值的拷贝传递
+      //1.判断
+      //判断是否所有元素都符合条件 every() 返回布尔值
+      let bool1 = arr1.every(function(value, index, arr) {
+        return value % 2 == 0;
+      });
+      console.log(bool1);
+      //判断是否包含符合条件的元素 some() 返回布尔值
+      let bool2 = arr1.some(function(value, index, arr) {
+        return value % 2 == 0;
+      });
+      console.log(bool2);
+
+      //2.遍历
+      //遍历操作原数组 forEach()  无返回值
+      arr1.forEach(function(value, index, arr) {
+        arr[index] = value * 2;
+      });
+      console.log(arr1);
+
+      //遍历操作放入新数组，保护原数组 map() 返回新值
+      let arr2 = arr1.map(function(value, index, arr) {
+        return (value *= 2);
+      });
+
+      console.log(arr1);
+      console.log(arr2);
+
+      //3. 过滤和汇总
+      // 过滤：复制出数组中符合条件的元素们组成新数组返回  filter
+      let arr3 = arr1.filter(function(value, index, arr) {
+        return value % 8 == 0; //取出能被8整除的元素组成新数组
+      });
+      console.log(arr3);
+      // 汇总：对数组中所有元素进行统计和汇总，得出一个最终的结论 reduce()
+      let sum = arr1.reduce(
+        function(prev, value, index, arr) {
+          //prev 临时汇总值
+          return prev + value;
+        },
+        0 //起始值-累加的开始  第一个prev的值
+      );
+      console.log(sum);
+    </script>
+  </head>
+  <body></body>
+</html>

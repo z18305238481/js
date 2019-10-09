@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      function calc(ename, ...arr) {
+        let sum = arr.reduce((prev, value) => (prev += value), 0);
+        console.log(`${ename}的工资为${sum}`);
+      }
+      calc("lilei", 1000, 2000, 3000);
+      calc("hmm", 2000, 5000, 30, 200, 213, 432, 123, 555, 3332, 21233, 999);
+
+      let add = (...arr) => arr.reduce((prev, value) => prev + value, 0);
+      console.log(add(3, 5, 8, 8, 9));
+    </script>
+  </head>
+  <body></body>
+</html>

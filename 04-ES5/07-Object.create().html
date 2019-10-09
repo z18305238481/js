@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //仅创建子对象继承父对象
+      let father = {
+        bal: 1000000000,
+        car: "infiniti"
+      };
+      let hmm = Object.create(father);
+      console.log(hmm.car, hmm.bal);
+
+      //创建子对象，并添加自有属性  属性开关默认false
+      let child = Object.create(father, {
+        age: {
+          value: 26,
+          writable: true,
+          enumerable: true,
+          configurable: true
+        }
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
