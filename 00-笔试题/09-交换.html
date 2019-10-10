@@ -6,11 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <script>
-      //调用函数时...打散数组
-      arr = [1, 2, 3, 4, 5, 6, 7];
-      console.log(...arr);
-      console.log(Math.max(...arr));
-      console.log(Math.max.apply(null, arr));
+      let a = 1;
+      let b = 2;
+      //不声明第三个变量交换a,b值
+      [a, b] = [b, a]; //解构方法
+
+      a = [a, b];
+      b = a[0];
+      a = a[1]; //数组方法
+
+      a = a + b;
+      b = a - b;
+      a = a - b; //算数方法
+
+      a = [b, (b = a)][0];
     </script>
   </head>
   <body></body>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      function liang() {
+        return new Promise((resolve, reject) => {
+          let bang = "接力棒";
+          console.log(`亮拿着${bang}起跑...`);
+          setTimeout(() => {
+            if (Math.random() < 0.5) {
+              console.log("亮到达终点!");
+              //亮到达终点后，自动调用下一项任务开始执行
+              resolve(bang); //前后任务之间传递参数
+            } else {
+              console.log("baji...");
+              reject("亮摔倒了");
+            }
+          }, 1000);
+        });
+      }
+
+      function ran(bang) {
+        return new Promise((resolve, reject) => {
+          console.log(`然接过${bang}起跑...`);
+          setTimeout(() => {
+            console.log("然到达终点!");
+            //在然执行完之后，自动调用下一项任务开始执行
+            resolve(bang);
+          }, 1000);
+        });
+      }
+
+      function dong(bang) {
+        return new Promise((resolve, reject) => {
+          console.log(`东接过${bang}起跑...`);
+          setTimeout(bang => {
+            console.log("东到达终点!");
+            //当东的任务结束后，自动调用下一项任务开始执行
+            resolve();
+          }, 1000);
+        });
+      }
+
+      (async function() {
+        console.log("比赛开始");
+        await liang(); //await等待 代替then
+        await ran();
+        await dong();
+        console.log("比赛结束");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

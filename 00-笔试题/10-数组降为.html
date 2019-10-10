@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      let arr = [[1, 2, 3, [7, 8]], 12, [4, 5, 6]];
+      // arr = [].concat.apply([], arr);
+      // console.log(arr);
+      递归降维;
+      function fun(arr) {
+        // arr = [].concat.apply([], arr);
+        arr = [].concat(...arr);
+        let bool = arr.some(function(value, index, arr) {
+          return Array.isArray(value);
+        });
+        if (bool) {
+          arr = fun(arr);
+        }
+        return arr;
+      }
+      arr = fun(arr);
+      console.log(arr);
+
+      //es6简写
+      function fun2(arr) {
+        arr = [].concat(...arr);
+        //arguments.callee 动态调用
+        arr.some(value => Array.isArray(value)) &&
+          (arr = arguments.callee(arr));
+        return arr;
+      }
+      arr = fun2(arr);
+      console.log(arr);
+    </script>
+  </head>
+  <body></body>
+</html>

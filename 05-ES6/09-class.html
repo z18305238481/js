@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      class Student {
+        constructor(sname, sage) {
+          this.sname = sname;
+          this.sage = sage;
+        }
+
+        //访问器属性
+        get sage() {
+          return this._sage;
+        }
+        set sage(value) {
+          if (value >= 11 && value <= 15) {
+            this._sage = value;
+          } else {
+            throw Error("年龄范围错误");
+          }
+        }
+
+        intr() {
+          console.log(`I'm ${this.sname}, I'm ${this.sage}`);
+        }
+      }
+      let lilei = new Student("Li Lei", 11);
+      let hmm = new Student("Han Meimei", 12);
+      lilei.intr();
+      hmm.intr();
+    </script>
+  </head>
+  <body></body>
+</html>

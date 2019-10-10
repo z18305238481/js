@@ -12,19 +12,6 @@
       let [year, month, day] = [2019, 10, 1]; //让数组值取出放入有意义的变量方便维护
       console.log(year, month, day);
 
-      let a = 1;
-      let b = 2;
-      //不声明第三个变量交换a,b值
-      [a, b] = [b, a]; //解构方法
-
-      a = [a, b];
-      b = a[0];
-      a = a[1]; //数组方法
-
-      a = a + b;
-      b = a - b;
-      a = a - b; //算数方法
-
       //对象解构  ↓ 别名
       let { name: n, age, work } = {
         name: "lilei",
@@ -36,7 +23,7 @@
       console.log(n, age, work("web"));
 
       //参数解构-只要多个实参不确定，切要求实参与形参保持对应
-      function order({ zhushi, xiaochi, yinliao }) {
+      function order({ zhushi=0, xiaochi=0, yinliao=0 }) {
         console.log(zhushi, xiaochi, yinliao);
       }
       order({ zhushi: "香辣鸡腿堡", xiaochi: "薯条", yinliao: "可乐" });

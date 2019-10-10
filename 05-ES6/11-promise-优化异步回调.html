@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      function liang() {
+        return new Promise((resolve, reject) => {
+          let bang = "接力棒";
+          console.log(`亮拿着${bang}起跑...`);
+          setTimeout(() => {
+            if (Math.random() < 0.5) {
+              console.log("亮到达终点!");
+              //亮到达终点后，自动调用下一项任务开始执行
+              resolve(bang); //前后任务之间传递参数
+            } else {
+              console.log("baji...");
+              reject("亮摔倒了");
+            }
+          }, 1000);
+        });
+      }
+
+      function ran(bang) {
+        return new Promise((resolve, reject) => {
+          console.log(`然接过${bang}起跑...`);
+          setTimeout(() => {
+            console.log("然到达终点!");
+            //在然执行完之后，自动调用下一项任务开始执行
+            resolve(bang);
+          }, 1000);
+        });
+      }
+
+      function dong(bang) {
+        return new Promise((resolve, reject) => {
+          console.log(`东接过${bang}起跑...`);
+          setTimeout((bang) => {
+            console.log("东到达终点!");
+            //当东的任务结束后，自动调用下一项任务开始执行
+            resolve();
+          }, 1000);
+        });
+      }
+      console.log("比赛开始..pia");
+      liang()
+        .then(ran)
+        .then(dong)
+        .then(() => {
+          console.log("比赛结束");
+        });
+
+      //---------------------------------------------------------------------------------------
+      // function liang(next) {
+      //   console.log("亮起跑...");
+      //   setTimeout(function() {
+      //     console.log("亮到达终点!");
+      //     //亮到达终点后，自动调用下一项任务开始执行
+      //     next();
+      //   }, 6000);
+      // }
+      // function ran(next) {
+      //   console.log("然起跑...");
+      //   setTimeout(function() {
+      //     console.log("然到达终点!");
+      //     //在然执行完之后，自动调用下一项任务开始执行
+      //     next();
+      //   }, 4000);
+      // }
+      // function dong(next) {
+      //   console.log("东起跑...");
+      //   setTimeout(function() {
+      //     console.log("东到达终点!");
+      //     //当东的任务结束后，自动调用下一项任务开始执行
+      //     next();
+      //   }, 2000);
+      // }
+      // //让亮先和然串联
+      // //liang(ran);
+      // //让亮和然和东都串联起来
+      // console.log("比赛开始...pia!");
+      // liang(
+      //   //liang的next
+      //   function() {
+      //     ran(
+      //       //ran的next
+      //       function() {
+      //         dong(
+      //           //dong的next
+      //           function() {
+      //             console.log("比赛结束！");
+      //           }
+      //         );
+      //       }
+      //     );
+      //   }
+      // );
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script>
+      //父类
+      class Enemy {
+        constructor(x, y) {
+          this.x = x;
+          this.y = y;
+        }
+
+        fly() {
+          console.log(`飞行到x:${this.x},y:${this.y}`);
+        }
+      }
+
+      //子类继承父类 extends
+      class Plan extends Enemy {
+        constructor(x, y, score) {
+          super(x, y); //调用父类构造函数
+          this.score = score;
+        }
+
+        getScore() {
+          console.log(`击落一架敌机得到${this.score}分`);
+        }
+      }
+
+      let f16 = new Plan(2, 4, 50);
+      console.log(f16);
+
+      class San extends Enemy {
+        constructor(x, y, award) {
+          super(x, y);
+          this.award = award;
+        }
+
+        getAward() {
+          console.log(`获得一个降落伞${this.award}`);
+        }
+      }
+
+      let SanNo1LBW = new San(20, 40, "LBW");
+      console.log(SanNo1LBW);
+    </script>
+  </head>
+  <body></body>
+</html>
