@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <span>遍历节点树</span>
+    <li>uname</li>
+    <li>
+      <ul>
+        <li>score</li>
+        <li>爸爸</li>
+        <li>uname</li>
+      </ul>
+    </li>
+    <li>score</li>
+  </body>
+
+  <script>
+    let uname = "dingding";
+    let score = 3000;
+
+    function getChildren(parent) {
+      let children = parent.children;
+
+      //如果child还有资源股，递归调用getChildren(child)
+      for (const child of children) {
+        if (child.innerHTML == "score") {
+          child.innerHTML = score;
+        }
+        if (child.innerHTML == "uname") {
+          child.innerHTML = uname;
+        }
+
+        console.log(1);
+        console.log(child);
+        if (child.children.length > 0) {
+          console.log(2);
+          arguments.callee(child);
+        }
+      }
+    }
+
+    getChildren(document.body);
+  </script>
+</html>

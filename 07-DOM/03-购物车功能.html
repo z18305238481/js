@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Document</title>
+  <style>
+    table {
+      width: 600px;
+      text-align: center;
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+    }
+
+    td[colspan="3"] {
+      text-align: right;
+    }
+
+    tbody td:last-child {
+      background: yellow;
+    }
+
+    tfoot td:last-child {
+      background: red;
+    }
+
+  </style>
+</head>
+<body>
+<table id="data">
+  <thead>
+  <tr>
+    <th>商品名称</th>
+    <th>单价</th>
+    <th>数量</th>
+    <th>小计</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>iPhone6</td>
+    <td>¥4488.00</td>
+    <td>
+      <button>-</button>
+      <span>1</span>
+      <button>+</button>
+    </td>
+    <td>¥4488.00</td>
+  </tr>
+  <tr>
+    <td>iPhone6 plus</td>
+    <td>¥5288.00</td>
+    <td>
+      <button>-</button>
+      <span>1</span>
+      <button>+</button>
+    </td>
+    <td>¥5288.00</td>
+  </tr>
+  <tr>
+    <td>iPad Air 2</td>
+    <td>¥4288.00</td>
+    <td>
+      <button>-</button>
+      <span>1</span>
+      <button>+</button>
+    </td>
+    <td>¥4288.00</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <td colspan="3">Total:</td>
+    <td>¥14064.00</td>
+  </tr>
+  </tfoot>
+</table>
+</body>
+<script>
+  //DOM 4步
+  //1.找到出发事件的元素
+  let table = document.getElementById("data");
+  let btns = table.getElementsByTagName("button");
+  //2.绑定事件处理函数
+  for (const btn of btns) {
+    btn.onclick = function () {
+      let span = this.parentElement.children[1];
+      //获得页面数量
+      let n = parseInt(span.innerHTML);
+      //加减号操作
+      if (btn.innerHTML == "+") {
+        n++;
+      } else if (btn.innerHTML == "-" && n > 0) {
+        n--;
+      }
+      span.innerHTML = n;
+      //修改每行合计
+      let td = this.parentElement;
+      let price = parseFloat(td.previousElementSibling.innerHTML.slice(1));
+
+      let sub = td.nextElementSibling;
+      sub.innerHTML = "￥" + (price * n).toFixed(2);
+      //修改所有合计
+      let prices = table.querySelectorAll("tbody td:last-child") //返回类数组对象
+      let totle = 0;
+      for (let i of prices) {
+        let p = parseFloat(i.innerHTML.slice(1))
+        totle += p
+      }
+      table.querySelector("tfoot td:last-child").innerHTML = "￥" + totle.toFixed(2)
+
+    };
+  }
+  //3.找到要修改的元素
+  //4.修改元素
+</script>
+</html>
