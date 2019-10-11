@@ -110,7 +110,6 @@
         let totle = 0;
         for (let i of prices) {
           let p = parseFloat(i.innerHTML.slice(1));
-
           totle += p;
         }
         table.querySelector("tfoot td:last-child").innerHTML =
