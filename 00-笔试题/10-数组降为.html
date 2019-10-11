@@ -17,7 +17,7 @@
           return Array.isArray(value);
         });
         if (bool) {
-          arr = fun(arr);
+          arr = arguments.callee(arr);
         }
         return arr;
       }
