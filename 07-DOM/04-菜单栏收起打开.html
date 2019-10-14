@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <style>
+      div {
+        float: left;
+        height: 100px;
+        line-height: 100px;
+      }
+      #d1,
+      #d3 {
+        background-color: #ccff00;
+      }
+      #d2 {
+        cursor: pointer;
+        background-color: #ffcc00;
+      }
+      #d1 {
+        width: 64px;
+        /*过渡效果*/
+        transition: all 500ms linear;
+        /*因为大小会变防止溢出用overflow:hidden*/
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="d1">树形列表</div>
+    <div id="d2">&lt;&lt;</div>
+    <div id="d3">内容的主体</div>
+    <script>
+      //1.查找触发事件的对象
+      let d1 = document.getElementById("d1");
+      let d2 = document.getElementById("d2");
+      //2.单击对象触发事件
+      d2.onclick = function() {
+        //3.查找要修改的元素-让d1影藏
+        let dis = this.innerHTML;
+        if (dis == "&gt;&gt;") {
+          //如果是隐藏修改为显示--设置宽度代替实现过渡效果
+          // d1.style.display = "block";
+          d1.style.width = "64px";
+          //修改箭头方向
+          d2.innerHTML = "&lt;&lt;";
+        } else {
+          //如果不是隐藏修改为影藏--宽度0代替实现过渡效果
+          // d1.style.display = "none";
+          d1.style.width = 0;
+          //箭头方向修改
+          d2.innerHTML = "&gt;&gt;";
+        }
+      };
+    </script>
+  </body>
+</html>

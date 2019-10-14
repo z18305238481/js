@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="">
-      <change beforePath="$PROJECT_DIR$/00-笔试题/10-数组降为.html" beforeDir="false" afterPath="$PROJECT_DIR$/00-笔试题/10-数组降为.html" afterDir="false" />
+    <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="update">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/04-菜单栏收起打开.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/05-伸缩二级菜单.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/06-全选和取消全选.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/07-实现多标签页效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/add.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/err.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/minus.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/ok.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-DOM/03-购物车功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/03-购物车功能.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-DOM/5_valiWithCSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,14 +21,43 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1S3NH4FE5RqegwsGtAzuXtMHJts" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="添加" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/07-DOM" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\js\07-DOM" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\js\07-DOM" />
+      <recent name="D:\github\js\07-DOM\images" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -41,8 +81,51 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570788227571</updated>
-      <workItem from="1570788229878" duration="792000" />
+      <workItem from="1570788229878" duration="2285000" />
+      <workItem from="1570790529993" duration="904000" />
+      <workItem from="1570791449079" duration="6072000" />
+      <workItem from="1570841959788" duration="1099000" />
+      <workItem from="1570843075109" duration="155000" />
+      <workItem from="1570843242337" duration="23010000" />
+      <workItem from="1571015282403" duration="21000" />
+      <workItem from="1571015318018" duration="253000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1570789053477</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570789053477</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update">
+      <created>1570789206429</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570789206429</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update">
+      <created>1570793043221</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570793043221</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update">
+      <created>1570795259953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1570795259953</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update">
+      <created>1570877428730</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570877428730</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -53,10 +136,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
 </project>
