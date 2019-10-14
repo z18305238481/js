@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/04-菜单栏收起打开.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/05-伸缩二级菜单.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/06-全选和取消全选.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/07-实现多标签页效果.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/add.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/err.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/ok.png" afterDir="false" />
+    <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/07-DOM/09-创建添加元素.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/10-异步加载表格数据.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/11-异步二级联动列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/12-窗口跳转.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/DOM简化.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/css/1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/css/3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/css/4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/css/5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/css/8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/数组去重.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-DOM/03-购物车功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/03-购物车功能.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-DOM/5_valiWithCSS.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -41,14 +47,14 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/07-DOM" />
+    <property name="last_opened_file_path" value="D:/课件/web1907" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.常规" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -71,6 +77,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="数组去重.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/07-DOM/数组去重.js" working-dir="$PROJECT_DIR$/07-DOM">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.数组去重.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -88,7 +104,8 @@
       <workItem from="1570843075109" duration="155000" />
       <workItem from="1570843242337" duration="23010000" />
       <workItem from="1571015282403" duration="21000" />
-      <workItem from="1571015318018" duration="253000" />
+      <workItem from="1571015318018" duration="9200000" />
+      <workItem from="1571025785104" duration="21565000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1570789053477</created>
@@ -125,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570877428730</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update">
+      <created>1571015584323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571015584323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

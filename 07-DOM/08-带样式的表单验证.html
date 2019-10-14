@@ -88,7 +88,7 @@
         <tr>
           <td></td>
           <td colspan="2">
-            <input type="submit" value="保存" />
+            <button name="button">提交</button>
             <input type="reset" value="重填" />
           </td>
         </tr>
@@ -97,8 +97,9 @@
     <script>
       //文本框获得焦点让右边文本框显示
       let tetName = document.getElementsByName("username")[0];
+      // let tetName = form1.username
       let tetPwd = document.getElementsByName("pwd")[0];
-
+      //let tetPwd = form1.pwd
       tetPwd.onfocus = tetName.onfocus = function() {
         let divName = this.parentElement.nextElementSibling.children[0];
         console.log(divName);
@@ -119,6 +120,8 @@
         let reg = /^\w{1,10}$/;
         re(this, reg);
       };
+
+      //获得焦点部分
     </script>
   </body>
 </html>

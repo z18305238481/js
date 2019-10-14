@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <div id="d1">
+      <p id="p1">1</p>
+      <p id="p2" class="p2">2</p>
+    </div>
+    <script>
+      let a = document.createElement("a");
+      a.href = "http://www.baidu.com";
+      a.innerHTML = "百度";
+
+      //插入到d1下面
+      d1.appendChild(a);
+      //插入到d1下面的p2前面
+      d1.insertBefore(a, p2);
+      //替换d1下面的p2
+      d1.replaceChild(a, p2);
+    </script>
+  </body>
+</html>

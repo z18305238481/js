@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>动态创建表格</title>
+    <meta charset="utf-8" />
+    <style>
+      table {
+        width: 600px;
+        border-collapse: collapse;
+        text-align: center;
+      }
+      td,
+      th {
+        border: 1px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="data">
+      <table id="table1">
+        <tr>
+          <td>员工姓名</td>
+          <td>薪资</td>
+          <td>年龄</td>
+          <td>删除</td>
+        </tr>
+      </table>
+    </div>
+    <script>
+      let json = [{ ename: "Tom", salary: 11000, age: 25 }, { ename: "John", salary: 13000, age: 28 }, { ename: "Mary", salary: 12000, age: 25 }];
+      let tbody = document.createElement("tbody");
+
+      for (let item of json) {
+        // let tr = document.createElement("tr");
+        // tbody.appendChild(tr); //遍历数组数数量创建tr
+        let tr = tbody.insertRow();
+
+        for (let i in item) {
+          // 追加td标签和数据;
+          // let td = document.createElement("td");
+          // td.innerHTML = item[i];
+          // tr.appendChild(td);
+          let td = tr.insertCell();
+          td.innerHTML = item[i];
+        }
+        //追加一列内容
+        let td = tr.insertCell();
+        let button = document.createElement("button");
+        button.innerHTML = "×";
+        td.appendChild(button);
+        button.onclick = function() {
+          let buttonParent = button.parentElement;
+          let ename = buttonParent.parentElement.children[0].innerHTML;
+          let bool = confirm(`是否确定删除:${ename}吗?`);
+          if (bool) {
+            table1.deleteRow(buttonParent.parentElement.rowIndex);
+          }
+        };
+      }
+      table1.appendChild(tbody); //table 下追加tbody
+    </script>
+  </body>
+</html>
