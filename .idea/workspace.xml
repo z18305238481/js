@@ -2,23 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/07-DOM/09-创建添加元素.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/10-异步加载表格数据.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/11-异步二级联动列表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/12-窗口跳转.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/DOM简化.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/css/1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/css/3.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/css/4.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/css/5.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/css/8.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/images/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-DOM/数组去重.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/02-location.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/03_location-demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/04-刷新.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/05-navigator-浏览器配置信息.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/06-插件检测.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/07-浏览器检测名称和版本号.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/08-事件监听-addEventListener.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/09-事件冒泡执行和阻止冒泡.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/10-计算器事例-冒泡应用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/11-阻止默认行为.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/12-获得鼠标位置.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/13-鼠标定位-图片拖拽.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/14-页面滚动显示.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/9-1_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/9-2_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/9-3_history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/css/2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-BOM/images/xiaoxin.gif" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/08-带样式的表单验证.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-DOM/12-窗口跳转.html" beforeDir="false" afterPath="$PROJECT_DIR$/08-BOM/01-打开窗口.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -47,22 +50,25 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/课件/web1907" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/BOM" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\github\js\07-DOM" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\js\BOM" />
       <recent name="D:\github\js\07-DOM" />
       <recent name="D:\github\js\07-DOM\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\js\08-BOM" />
+      <recent name="D:\github\js\BOM" />
+      <recent name="D:\github\js\07-DOM" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -77,12 +83,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.09-事件冒泡执行和阻止冒泡.html">
+    <configuration name="09-事件冒泡执行和阻止冒泡.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/js/BOM/09-事件冒泡执行和阻止冒泡.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="数组去重.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/07-DOM/数组去重.js" working-dir="$PROJECT_DIR$/07-DOM">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.09-事件冒泡执行和阻止冒泡.html" />
         <item itemvalue="Node.js.数组去重.js" />
       </list>
     </recent_temporary>
@@ -106,6 +116,8 @@
       <workItem from="1571015282403" duration="21000" />
       <workItem from="1571015318018" duration="9200000" />
       <workItem from="1571025785104" duration="21565000" />
+      <workItem from="1571056026591" duration="84000" />
+      <workItem from="1571101289991" duration="24996000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1570789053477</created>
@@ -149,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571015584323</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update">
+      <created>1571056073975</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1571056073975</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

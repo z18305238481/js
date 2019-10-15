@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>...</title>
+    <script></script>
+  </head>
+
+  <body>
+    <button id="btnShoot">shoot</button><br />
+    <button id="btnAward">获得跟踪导弹</button><br />
+    <button id="btnBreak">失去跟踪导弹</button><br />
+    <script>
+      btnShoot.onclick = function() {
+        console.log("发射普通子弹");
+      };
+      //添加事件监听
+      btnAward.onclick = function() {
+        console.log("获得跟踪导弹");
+        btnShoot.addEventListener("click", shoot2);
+      };
+      function shoot2() {
+        console.log("发射跟踪导弹>>>");
+      }
+      //移除事件监听
+      btnBreak.onclick = function() {
+        console.log("失去跟踪导弹");
+        btnShoot.removeEventListener("click", shoot2);
+      };
+    </script>
+  </body>
+</html>

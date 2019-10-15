@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>在当前显示区范围内实现点不到的小方块</title>
+    <style>
+      div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background-image: url(images/xiaoxin.gif);
+        background-size: 100%;
+
+        /*margin-left: 20px;*/
+        /*margin-top: 20px;*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pop"></div>
+    <script>
+      // pop.onclick = function(e) {
+      //   console.log(`距离屏幕左上角${e.screenX},${e.screenY}`);
+      //   console.log(`距离显示区左上角${e.clientX},${e.clientY}`);
+      //   console.log(`距离div左上角${e.offsetX},${e.offsetY}`);
+      // };
+      let firstX = undefined;
+      let firstY = undefined;
+      let flag = false;
+      let ofy = undefined;
+      let ofx = undefined;
+      pop.onmousedown = function(e) {
+        firstX = e.clientX;
+        firstY = e.clientY;
+        ofy = e.offsetY;
+        ofx = e.offsetX;
+        flag = true;
+      };
+      pop.onmousemove = function(e) {
+        if (flag) {
+          let moveX = e.clientX - firstX;
+          let moveY = e.clientY - firstY;
+          pop.style.left = firstX - ofx + moveX + "px";
+          pop.style.top = firstY - ofy + moveY + "px";
+        }
+      };
+      pop.onmouseup = function() {
+        flag = false;
+      };
+    </script>
+  </body>
+</html>

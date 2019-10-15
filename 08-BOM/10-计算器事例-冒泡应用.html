@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>取消与利用冒泡</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div id="keys">
+      <button>1</button>
+      <button>2</button>
+      <button>3</button><br />
+      <button>4</button>
+      <button>5</button>
+      <button>6</button><br />
+      <button>7</button>
+      <button>8</button>
+      <button>9</button><br />
+      <button>C</button>
+      <button>+</button>
+      <button>-</button>
+      <button>=</button>
+    </div>
+    <textarea id="sc" style="resize:none;width:200px; height:50px;" readonly></textarea>
+    <script>
+      keys.onclick = function(e) {
+        //目标元素
+        let btn = e.target;
+        if (btn.nodeName == "BUTTON") {
+          sc.innerHTML += btn.innerHTML;
+          if (btn.innerHTML == "=") {
+            try {
+              let result = sc.innerHTML.slice(0, -1);
+              sc.innerHTML = eval(result);
+            } catch (e) {
+              sc.innerHTML = "ERROR";
+            }
+          } else if (btn.innerHTML == "C") {
+            sc.innerHTML = "";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>

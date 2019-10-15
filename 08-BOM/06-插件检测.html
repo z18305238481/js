@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      if (navigator.plugins["Chrome PDF Viewer"] !== undefined) {
+        document.write(`<h1>已安装PDF插件，可浏览器PDF文档</h1>`);
+      } else {
+        document.write(`<h1>未安装PDF插件，<a href="#">点此下载</a></h1>`);
+      }
+      if (navigator.plugins["Shockwave Flash"] !== undefined) {
+        document.write(`<h1>已安装Flash插件，可播放视频</h1>`);
+      } else {
+        document.write(`<h1>未安装Flash插件，<a href="#">点此下载</a></h1>`);
+      }
+    </script>
+  </body>
+</html>

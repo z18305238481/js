@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <a href="#" id="a1">点击</a>
+    <form action="#">用户名：<input type="text" name="uname" /><button id="btn">提交</button></form>
+  </body>
+  <script>
+    a1.onclick = function(e) {
+      e.preventDefault();
+      alert("a1");
+    };
+
+    btn.onclick = function(e) {
+      e.preventDefault();
+    };
+  </script>
+</html>
