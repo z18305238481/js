@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new document</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>操作元素的内容和值</h1>
+    <form action="">
+      用户名:<input type="text" name="uname" /> <span id="uname-msg"></span><br />
+      密码:<input type="password" name="upwd" /> <span id="upwd-msg"></span><br />
+      <button>提交注册信息</button>
+    </form>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+      let flagName = false;
+      let flagPwd = false;
+      function vail($txt, minlen, maxlen, errMsg) {
+        let $span = $txt.next();
+        let len = $txt.val().trim().length;
+        if (len >= minlen && len <= maxlen) {
+          //正确时，使用图片:"<img src='img/ok.png'>"
+          $span.html(`<img src="img/ok.png">`);
+          return true;
+        } else {
+          //姓名错误时: "<img src='img/err.png'>用户名必须介于3~9位之间!"
+          //密码错误时: "<img src='img/err.png'>密码必须介于6~8位之间!"
+          $span.html(`<img src="img/err.png">${errMsg}`);
+          return false;
+        }
+      }
+
+      $('[name="uname"]').blur(function(e) {
+        flagName = vail($(this), 3, 9, "用户名介于3~9位之间");
+      });
+
+      $('[name="upwd"]').blur(function(e) {
+        flagPwd = vail($(this), 6, 8, "密码必须介于6~8位之间!");
+      });
+
+      //提交验证文本框获得焦点
+      $(":button").click(function(e) {
+        //阻止默认行为: e.preventDefault();
+        e.preventDefault();
+        let $name = $('[name="uname"]');
+        let $pwd = $('[name="upwd"]');
+        console.log(flagName, flagPwd);
+        if (flagName == false) {
+          $name.val("");
+          $name.focus();
+        } else if (flagPwd == false) {
+          $pwd.val("");
+          $pwd.focus();
+        } else {
+          alert("注册成功！");
+        }
+      });
+
+      //表单提交: $(form).submit();
+    </script>
+  </body>
+</html>

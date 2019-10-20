@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <script>
+      let url = "http://www.baidu.com/product/list?id=123&sort=count#title";
+      function urlParse(url) {
+        let obj = {};
+        let arr = url.splice("://");
+        obj.protocal = arr[0];
+        arr = arr[1];
+        arr = arr.splice("#");
+        obj.hash = arr[1];
+        arr = arr[0];
+        arr = arr.split("?");
+      }
+    </script>
+  </body>
+</html>

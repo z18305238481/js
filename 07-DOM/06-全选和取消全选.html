@@ -49,11 +49,7 @@
         let chbs = document.querySelectorAll("tbody tr td:first-child input");
         chbAll.onclick = function() {
           for (let chb of chbs) {
-            if (this.checked == true) {
-              chb.checked = this.checked;
-            } else {
-              chb.checked = this.checked;
-            }
+            chb.checked = this.checked;
           }
         };
 

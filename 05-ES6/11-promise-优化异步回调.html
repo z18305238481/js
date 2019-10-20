@@ -37,7 +37,7 @@
       function dong(bang) {
         return new Promise((resolve, reject) => {
           console.log(`东接过${bang}起跑...`);
-          setTimeout((bang) => {
+          setTimeout(bang => {
             console.log("东到达终点!");
             //当东的任务结束后，自动调用下一项任务开始执行
             resolve();
@@ -51,7 +51,6 @@
         .then(() => {
           console.log("比赛结束");
         });
-
       //---------------------------------------------------------------------------------------
       // function liang(next) {
       //   console.log("亮起跑...");

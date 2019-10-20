@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <style>
+    ul {
+      list-style: none;
+    }
+    ul > li {
+      width: 50px;
+      height: 50px;
+      border: 1px solid #000;
+      margin-top: 5px;
+    }
+  </style>
+  <body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script>
+    $("ul li").click(function(e) {
+      console.log(11);
+      $(this)
+        .prevAll()
+        .css({ background: "red" });
+      $(this).css({ background: "red" });
+      $(this)
+        .nextAll()
+        .css({ background: "#ffffff" });
+    });
+  </script>
+</html>

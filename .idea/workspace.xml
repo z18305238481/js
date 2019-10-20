@@ -2,26 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e06011a-f909-4e88-9b57-fc19f186d0c1" name="默认更改列表" comment="">
-      <change afterPath="$PROJECT_DIR$/08-BOM/02-location.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/03_location-demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/04-刷新.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/05-navigator-浏览器配置信息.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/06-插件检测.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/07-浏览器检测名称和版本号.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/08-事件监听-addEventListener.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/09-事件冒泡执行和阻止冒泡.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/10-计算器事例-冒泡应用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/11-阻止默认行为.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/12-获得鼠标位置.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/13-鼠标定位-图片拖拽.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/14-页面滚动显示.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/9-1_history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/9-2_history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/9-3_history.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/css/2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-BOM/images/xiaoxin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-笔试题/11-将url字符串转为对象.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-字符串操作/10-正则返回数组.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-DOM/03-购物车功能-事件委托优化.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/01-jQuery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/02-jQueryAPI.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/03-子元素过滤选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/04-基本过滤选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/05-按钮组-table隔行变色.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/06-jquery下拉列表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/07-内容过滤选择器.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/08-可见性选择器-visibility filter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/09-表单过滤选择器form state selector.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/10-表单元素验证.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/11-操作元素的属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/12-操作自定义属性.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/13-双态按钮.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/14-窗口弹出动画效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/15-五星好评demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/16-实现标签页头的切换.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/17-添加-删除.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/18-替换-克隆.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/19-事件绑定.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/20-引入js-onload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/21-鼠标操作.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/22-鼠标操作-hover.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/23-模拟触发.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/24-jQuery动画函数——显示隐藏动画.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/25-列表精简显示-显示全部.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/26-高度动画实现手风琴效果.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/27-动画-animate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/28-动画animate顺序执行.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/1-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/2-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/3-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/4-l.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/err.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/ok.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/p0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/p3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/p4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/p5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/img/star.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-JQuery/js/jquery-1.11.3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/07-DOM/12-窗口跳转.html" beforeDir="false" afterPath="$PROJECT_DIR$/08-BOM/01-打开窗口.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-ES6/11-promise-优化异步回调.html" beforeDir="false" afterPath="$PROJECT_DIR$/05-ES6/11-promise-优化异步回调.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-DOM/06-全选和取消全选.html" beforeDir="false" afterPath="$PROJECT_DIR$/07-DOM/06-全选和取消全选.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/08-BOM/08-事件监听-addEventListener.html" beforeDir="false" afterPath="$PROJECT_DIR$/08-BOM/08-事件绑定-addEventListener.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,25 +83,28 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/BOM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/09-JQuery/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\github\js\BOM" />
-      <recent name="D:\github\js\07-DOM" />
-      <recent name="D:\github\js\07-DOM\images" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\github\js\09-JQuery" />
       <recent name="D:\github\js\08-BOM" />
       <recent name="D:\github\js\BOM" />
       <recent name="D:\github\js\07-DOM" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\github\js\09-JQuery\img" />
+      <recent name="D:\github\js\09-JQuery" />
+      <recent name="D:\github\js\07-DOM" />
+      <recent name="D:\github\js\BOM" />
+      <recent name="D:\github\js\07-DOM\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,7 +153,10 @@
       <workItem from="1571015318018" duration="9200000" />
       <workItem from="1571025785104" duration="21565000" />
       <workItem from="1571056026591" duration="84000" />
-      <workItem from="1571101289991" duration="24996000" />
+      <workItem from="1571101289991" duration="25148000" />
+      <workItem from="1571188063220" duration="21985000" />
+      <workItem from="1571274839589" duration="27316000" />
+      <workItem from="1571361354403" duration="22199000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1570789053477</created>
@@ -168,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571056073975</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update">
+      <created>1571136943324</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571136943324</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

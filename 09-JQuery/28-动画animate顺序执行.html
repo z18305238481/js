@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <style>
+    img {
+      position: relative;
+    }
+  </style>
+  <body>
+    <img id="s1" src="img/star.png" /><br />
+    <img id="s2" src="img/star.png" /><br />
+    <img id="s3" src="img/star.png" /><br />
+    <img id="s4" src="img/star.png" /><br />
+
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+      $("#s1").click(function() {
+        //如果正在播放动画就停止:animated
+        if ($(this).is(":animated")) {
+          $(this).stop(true);
+        } else {
+          $("#s1")
+            //队列顺序播放
+            .animate(
+              {
+                left: 400
+              },
+              2000
+            )
+            .animate(
+              {
+                top: 200
+              },
+              2000
+            );
+        }
+      });
+
+      /*
+  s1在屏幕左上角的小星星， 点击后从左移动到屏幕右边
+  s2在屏幕左上角的小星星，点击后从左移动到屏幕右边，再移动到下边——走直角
+  s3在屏幕左上角的小星星，点击后从左上角移动到屏幕右下边，走斜线
+  s4点击小星星，变大、变淡....  直至消失
+*/
+      $("#s4").click(function() {
+        alert("s4");
+        $(this).animate(
+          {
+            opacity: 0,
+            width: 256,
+            top: -200,
+            marginLeft: -45
+          },
+          500,
+          function() {
+            $(this).hide();
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+  </head>
+  <body>
+    <input type="text" /><button>百度一下</button>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script>
+      $("button").click(function() {
+        let input = $(":text")
+          .val()
+          .trim();
+        if (input !== "") {
+          console.log(`搜索相关内容:${input}`);
+        }
+      });
+
+      //一边在搜索框输入内容一边搜索
+      $(":text").on("input", function(e) {
+        //找到按钮模拟按钮上的单击事件
+        $("button").trigger("click");
+      });
+    </script>
+  </body>
+</html>
